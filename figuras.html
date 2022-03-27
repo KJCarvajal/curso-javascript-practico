@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleFiguras.css">
+    <title>Figuras geometricas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">
+            <div class="iconBx active" data-id="contentCuadrado">
+                <img src="images/cuadrado.png">
+            </div>
+            <div class="iconBx" data-id="contentTriangulo">
+                <img src="images/triangulo.png">
+            </div>
+            <div class="iconBx" data-id="contentCirculo">
+                <img src="images/circulo.png">
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx active" id="contentCuadrado">
+                <div>
+                    <div class="text">
+                        <section>
+                            <form action="">
+
+                                <p>Digite el lado del cuadrado:</p>
+                                <input class="textbox" id="txtLadoCuadrado" type="number" placeholder="5cm" />
+                                <b><label class="msjResultado" id="lblResultadoCuadrado"></label></b>       
+                                <hr>
+                                <button class="btnCalcular" type="button" onclick="calcularPerimetroCuadrado()">
+                                    Calcular perimetro
+                                </button>
+                                <button class="btnCalcular" type="button" onclick="calcularAreaCuadrada()">
+                                    Calcular el area
+                                </button>
+                                <br>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="contentTriangulo">
+                <div>
+                    <div class="text">
+                        <section>
+                            <form action="">
+
+                                <div class="mytabs">
+                                    <input type="radio" id="tabPerimetroTriangulo" name="mytabs" checked="checked">
+                                    <label for="tabPerimetroTriangulo">Perimetro Triangulo</label>
+
+                                    <div class="tab">
+                                        <p>Digite el lado #1 del triangulo:</p>
+                                        <input class="textbox" id="txtLado1" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        <p>Digite el lado #2 del triangulo:</p>
+                                        <input class="textbox" id="txtLado2" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        <p>Digite la base del triangulo:</p>
+                                        <input class="textbox" id="txtBasePerimetro" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        
+                                        <b><label class="msjResultado" id="lblResultadoPerimetroTriangulo"></label></b>                   
+                                        <hr>
+                                        <button class="btnCalcular" type="button"
+                                            onclick="calcularPerimetroTriangulo()">
+                                            Calcular perimetro
+                                    </div>
+
+                                    <input type="radio" id="tabAreaTriangulo" name="mytabs">
+                                    <label for="tabAreaTriangulo">Área triangular</label>
+
+                                    <div class="tab">
+                                        <p>Digite la base del triangulo:</p>
+                                        <input class="textbox" id="txtBaseArea" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        <p>Digite la altura del triangulo:</p>
+                                        <input class="textbox" id="txtAltura" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+
+                                        <b><label class="msjResultado" id="lblResultadoAreaTriangulo"></label></b>            
+                                        <hr>
+                                        <button class="btnCalcular" type="button" onclick="calcularAreaTriangulo()">
+                                            Calcular area
+                                        </button>
+                                        <br>
+                                    </div>
+
+                                    <input type="radio" id="tabAlturaIsoceles" name="mytabs">
+                                    <label for="tabAlturaIsoceles">Altura de triángulo Isóceles</label>
+
+                                    <div class="tab">
+                                        <p>Digite el lado #1 del triangulo:</p>
+                                        <input class="textbox" id="txtLado1Isoceles" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        <p>Digite el lado #2 del triangulo:</p>
+                                        <input class="textbox" id="txtLado2Isoceles" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+                                        <p>Digite la base del triangulo:</p>
+                                        <input class="textbox" id="txtBaseIsoceles" type="number"
+                                            placeholder="Ejemplo: 5 (cm)" />
+
+                                        <b><label class="msjResultado" id="lblResultadoIsoceles"></label></b>            
+                                        <hr>
+                                        <button class="btnCalcular" type="button" 
+                                            onclick="calcularAlturaTrianguloIsoceles()">
+                                            Calcular area
+                                        </button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="contentCirculo">
+                <div>
+                    <div class="text">
+                        <section>
+                            <form action="">
+                                <p>Digite el radio del circulo: </p>
+                                <input class="textbox" id="txtRadio" type="number" placeholder="5cm" />
+                                <b><label class="msjResultado" id="lblResultadoCirculo"></label></b>
+                                <hr>
+                                <button 
+                                    class="btnCalcular" 
+                                    type="button" 
+                                    onclick="calcularPerimetroCirculo()">
+                                    Calcular perimetro
+                                </button>
+                                <button 
+                                    class="btnCalcular" 
+                                    type="button" 
+                                    onclick="calcularAreaCirculo()">
+                                    Calcular el area
+                                </button>
+                                <br>
+                            </form>
+                        </section>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./figuras.js"></script>
+
+</body>
+
+</html>
