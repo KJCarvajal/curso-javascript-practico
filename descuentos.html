@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Porcentajes y descuentos</title>
 </head>
 <body>
-    
+    <h1>Porcentajes y descuentos</h1>
+
+    <p>Este es el segundo taller del curso practico de JS</p>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+
+        <form action="">
+            <label for="inputPrice">Escribe el precio de tu producto</label>
+            <input id="inputPrice" type="number" placeholder="$0.00">
+            <br>
+            <label for="inputCupon">Escribe el codigo del cupon</label>
+            <input id="inputCupon" type="text" placeholder="CODE0000">
+            <br>
+            <button type="button" onclick="calcularPrecioFinal()">
+                Calcular el precio final
+            </button>
+
+            <p id="resultPrice"></p>
+        </form>
+    </section>
+
+
+    <script src="./descuentos.js"></script>
 </body>
 </html>
